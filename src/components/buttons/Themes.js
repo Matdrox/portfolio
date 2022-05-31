@@ -1,12 +1,17 @@
 import { motion, useMotionValue, useTransform } from 'framer-motion';
+import { useEffect } from 'react';
 
-const DarkMode = () => {
+const Themes = (props) => {
   const x = useMotionValue(0);
-  const background = useTransform(
-    x,
-    [0, 30],
-    ['#ADD8E6', '#FFCCCB']
-  );
+  const background = useTransform(x, [0, 40], ['#ADD8E6', '#FFCCCB']);
+  
+  useEffect(() => x.onChange(() => {
+    if (x.get() < 20) {
+      props.changeTheme(`bg-zinc-100 transition ease-in-out duration-200 delay-50`);
+    } else {
+      props.changeTheme(`bg-zinc-900 transition ease-in-out duration-200 delay-50`);
+    }
+  }))
 
   return (
     <motion.div
@@ -19,12 +24,10 @@ const DarkMode = () => {
         whileDrag={{ scale: 1.2 }}
         dragConstraints={{ left: 0, right: 40 }}
         dragSnapToOrigin={false}
-        // dragElastic={0.05}
-        onDrag={(event, info) => console.log(info.point.x, info.point.y)}
         style={{ x }}
       ></motion.div>
     </motion.div>
   );
 };
 
-export default DarkMode;
+export default Themes;
