@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Menu from './components/Menu';
 import Themes from './components/buttons/Themes';
-import imgMateiCananau from './img/MateiCananau.jpg';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -18,8 +17,6 @@ function App() {
         changeTheme={(theme) => setTheme(theme)}
         changePrimary={(primaryColor) => setPrimaryColor(primaryColor)}
       />
-      <img src={imgMateiCananau} />
-      <p className='text-black font-bold text-5xl'>HELLO SIIR</p>
       <Menu changePrimary={primaryColor}></Menu>
     </div>
   );
