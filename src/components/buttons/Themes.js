@@ -3,7 +3,8 @@ import { useEffect } from 'react';
 
 const Themes = (props) => {
   const x = useMotionValue(0);
-  const background = useTransform(x, [0, 40], ['#ADD8E6', '#FFCCCB']);
+  // const background = useTransform(x, [0, 40], ['#ADD8E6', '#FFCCCB']);
+  const background = useTransform(x, [0, 40], ['#D8D8D8', '#FFCCCB']);
   const circle = useTransform(x, [0, 40], ['#FFFFFF', '#000000']);
 
   useEffect(() =>
@@ -12,7 +13,7 @@ const Themes = (props) => {
         props.changeTheme(`bg-zinc-100`);
         props.changePrimary(`bg-white`);
       } else {
-        props.changeTheme(`bg-zinc-900`);
+        props.changeTheme(`bg-zinc-800`);
         props.changePrimary(`bg-zinc-700`);
       }
     })
@@ -21,7 +22,7 @@ const Themes = (props) => {
   return (
     <motion.div
       style={{ background }}
-      className='bg-black w-[80px] h-[45px] shadow-md rounded-3xl absolute top-0 right-0 m-10'
+      className='bg-black w-[80px] h-[45px] rounded-3xl absolute top-0 right-0 m-10'
     >
       <motion.div
         className='bg-white shadow absolute -left-1 w-[50px] h-[50px] rounded-3xl -my-0.5'
