@@ -4,14 +4,19 @@ import { useEffect } from 'react';
 const Themes = (props) => {
   const x = useMotionValue(0);
   const background = useTransform(x, [0, 40], ['#ADD8E6', '#FFCCCB']);
-  
-  useEffect(() => x.onChange(() => {
-    if (x.get() < 20) {
-      props.changeTheme(`bg-zinc-100 transition ease-in-out duration-200 delay-50`);
-    } else {
-      props.changeTheme(`bg-zinc-900 transition ease-in-out duration-200 delay-50`);
-    }
-  }))
+  const circle = useTransform(x, [0, 40], ['#FFFFFF', '#000000']);
+
+  useEffect(() =>
+    x.onChange(() => {
+      if (x.get() < 20) {
+        props.changeTheme(`bg-zinc-100`);
+        props.changePrimary(`bg-white`);
+      } else {
+        props.changeTheme(`bg-zinc-900`);
+        props.changePrimary(`bg-zinc-700`);
+      }
+    })
+  );
 
   return (
     <motion.div

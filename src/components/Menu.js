@@ -1,11 +1,11 @@
-import Box from './Box'
+import Box from './Box';
 
-const Menu = () => {
+const Menu = ({ changePrimary }) => {
   return (
     <div className='flex justify-center items-center h-screen content-center'>
-        <Box height='h-32'/>
+      <Box changePrimary={changePrimary}/>
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
