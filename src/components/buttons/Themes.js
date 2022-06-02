@@ -28,7 +28,7 @@ const Themes = (props) => {
         className='bg-white shadow absolute -left-1 w-[50px] h-[50px] rounded-3xl -my-0.5'
         drag='x'
         whileDrag={{ scale: 1.2 }}
-        whileHover={{ scale: 0.9 }}
+        // whileHover={{ scale: 0.9 }}
         dragConstraints={{ left: 0, right: 40 }}
         dragSnapToOrigin={false}
         style={{ x }}
