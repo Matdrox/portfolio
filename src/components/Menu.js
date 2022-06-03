@@ -9,7 +9,7 @@ const Menu = ({ changePrimary }) => {
       {/* ADD LOAD ANIMATION */}
       {/* SHOW THAT YOU HAVE TO SCROLL */}
         <p className='bg-zinc-300 text-zinc-800 font-bold text-5xl'>
-          Hi, I'm Matei Cananau.
+          Hi, I'm Matei Cananau. I FINNISHED YEAR 1 LETS GOOOO
         </p>
         <p className='text-xl text-zinc-600'>
           I am an engineering student at KTH Royal Institute of Technology.
