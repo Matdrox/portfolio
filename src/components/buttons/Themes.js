@@ -4,7 +4,7 @@ import { motion, useMotionValue, useTransform } from 'framer-motion';
 const Themes = (props) => {
   const x = useMotionValue(0);
   // const background = useTransform(x, [0, 40], ['#ADD8E6', '#FFCCCB']);
-  const background = useTransform(x, [0, 40], ['#D8D8D8', '#FFCCCB']);
+  const background = useTransform(x, [0, 40], ['#805AD5', '#F6AD55']);
   const circle = useTransform(x, [0, 40], ['#FFFFFF', '#000000']);
 
   useEffect(() =>
