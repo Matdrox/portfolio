@@ -17,7 +17,10 @@ const Menu = ({ changePrimary }) => {
           <br />
           Welcome to my portfolio.
         </p>
-        <Button/>
+        <div className='flex space-x-4'>
+        <Button text='My Projects'/>
+        <Button text='Contact Me'/>
+        </div>
       </div>
       <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}> 
         <img
