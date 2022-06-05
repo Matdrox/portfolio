@@ -19,7 +19,7 @@ const Menu = ({ changePrimary }) => {
         </p>
         <Button/>
       </div>
-      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.05 }}> 
+      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}> 
         <img
           src={imgMateiCananau}
           className='w-96 pointer-events-none rounded-xl shadow-lg p-2 bg-white'
