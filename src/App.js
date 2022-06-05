@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import Menu from './components/Menu';
+import Page1 from './components/Page1';
+import Page2 from './components/Page2';
 import Themes from './components/buttons/Themes';
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
         changeTheme={(theme) => setTheme(theme)}
         changePrimary={(primaryColor) => setPrimaryColor(primaryColor)}
       />
-      <Menu changePrimary={primaryColor}></Menu>
+      <Page1 changePrimary={primaryColor}/>
+      {/* <Menu changePrimary={primaryColor}></Menu> */}
+      <Page2/>
     </div>
   );
 }

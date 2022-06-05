@@ -3,9 +3,9 @@ import Button from './buttons/Button';
 import imgMateiCananau from '../img/MateiCananau.jpg';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 
-const Menu = ({ changePrimary }) => {
+const Page1 = ({ changePrimary }) => {
   return (
-    <div className='flex justify-center items-center h-screen w-screen content-center space-x-40'>
+    <div className='flex justify-center items-center h-screen min-w-screen content-center space-x-40'>
       <div style={{ flexDirection: 'column' }} className='space-y-3'>
       {/* ADD LOAD ANIMATION */}
       {/* SHOW THAT YOU HAVE TO SCROLL */}
@@ -33,4 +33,4 @@ const Menu = ({ changePrimary }) => {
   );
 };
 
-export default Menu;
+export default Page1;
