@@ -21,6 +21,7 @@ function App() {
       <Page1 changePrimary={primaryColor}/>
       {/* <Menu changePrimary={primaryColor}></Menu> */}
       <Page2/>
+      <Page1/>
     </div>
   );
 }

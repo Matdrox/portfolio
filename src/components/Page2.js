@@ -1,7 +1,32 @@
-const Page2 = () => {
-  return (
-    <div className='flex justify-center items-center h-screen min-w-screen content-center space-x-40'>Page2</div>
-  )
-}
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 
-export default Page2
+const Page2 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  // Add spotlight on hovered project, darkness around it
+  return (
+    <div className='grid place-items-center min-h-screen/2 min-w-screen'>
+      <div className='grid gap-5 w-3/4 lg:grid-cols-5'>
+        <h1 className='text-5xl font-extrabold underline decoration-purple-600/30 lg:col-span-5 lg:grid lg:grid-cols-2'>
+          My Projects
+        </h1>
+        <motion.div
+          class='h-40 bg-white shadow-lg rounded-md lg:col-span-3 '
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen && <motion.div class='h-64 bg-white shadow-lg rounded-md'></motion.div>}
+        </motion.div>
+        <motion.div class='h-40 bg-white shadow-lg rounded-md'></motion.div>
+        <motion.div class='h-40 bg-white shadow-lg rounded-md'></motion.div>
+        <motion.div class='h-40 bg-white shadow-lg rounded-md lg:col-span-2'></motion.div>
+        <motion.div class='h-40 bg-white shadow-lg rounded-md lg:col-span-3'></motion.div>
+        {/* <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          mollitia
+        </p> */}
+      </div>
+    </div>
+  );
+};
+
+export default Page2;
