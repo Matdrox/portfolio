@@ -9,7 +9,8 @@ const Page1 = ({ changePrimary }) => {
       <div style={{ flexDirection: 'column' }} className='space-y-3'>
       {/* ADD LOAD ANIMATION */}
       {/* SHOW THAT YOU HAVE TO SCROLL */}
-        <p className='bg-zinc-300 text-zinc-800 font-bold text-5xl'>
+        <p className='text-orange-400 font-bold text-5xl'>
+        {/* <p className='text-zinc-800 font-bold text-5xl'> */}
           Hi, I'm Matei Cananau
         </p>
         <p className='text-xl text-zinc-600'>
