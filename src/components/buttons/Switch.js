@@ -2,33 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 // import { motion, useMotionValue, useTransform } from 'framer-motion';
 
-const Themes = (props) => {
-  // const x = useMotionValue(0);
-  // // const background = useTransform(x, [0, 40], ['#ADD8E6', '#FFCCCB']);
-  // const background = useTransform(x, [0, 40], ['#805AD5', '#F6AD55']);
-  // const circle = useTransform(x, [0, 40], ['#FFFFFF', '#000000']);
-
-  // useEffect(() =>
-  //   x.onChange(() => {
-  //     if (x.get() < 20) {
-  //       props.changeTheme(`bg-zinc-100`);
-  //       props.changePrimary(`bg-white`);
-  //     } else {
-  //       props.changeTheme(`bg-zinc-800`);
-  //       props.changePrimary(`bg-zinc-700`);
-  //     }
-  //   })
-  // );
-
-  // const [isOn, setIsOn] = useState(false);
-  // const toggleSwitch = () => setIsOn(!isOn);
-  // const spring = {
-  //   type: 'spring',
-  //   stiffness: 700,
-  //   damping: 30,
-  // };
-
-  // const [enabled, setEnabled] = useState(false);
+const Switch = (props) => {
   const toggleSwitch = () => props.setEnabled(!props.enabled);
 
   const spring = {
@@ -79,4 +53,4 @@ const Themes = (props) => {
   );
 };
 
-export default Themes;
+export default Switch;
