@@ -7,10 +7,10 @@ const Page1 = ({ changePrimary }) => {
   return (
     <div className='flex justify-center items-center h-screen min-w-screen content-center space-x-40'>
       <div style={{ flexDirection: 'column' }} className='space-y-3'>
-      {/* ADD LOAD ANIMATION */}
-      {/* SHOW THAT YOU HAVE TO SCROLL */}
+        {/* ADD LOAD ANIMATION */}
+        {/* SHOW THAT YOU HAVE TO SCROLL */}
         <p className='text-orange-400 font-bold text-5xl'>
-        {/* <p className='text-zinc-800 font-bold text-5xl'> */}
+          {/* <p className='text-zinc-800 font-bold text-5xl'> */}
           Hi, I'm Matei Cananau
         </p>
         <p className='text-xl text-zinc-600'>
@@ -19,11 +19,12 @@ const Page1 = ({ changePrimary }) => {
           Welcome to my portfolio.
         </p>
         <div className='flex space-x-4'>
-        <Button text='My Projects'/>
-        <Button text='Contact Me'/>
+          <Button text='My Projects' />
+          <Button text='Contact Me' />
+          {/* Add a contact form */}
         </div>
       </div>
-      <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 1 }}> 
+      <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 1 }}>
         <img
           src={imgMateiCananau}
           className='w-96 pointer-events-none rounded-xl shadow-md p-2 bg-gradient-to-r from-orange-400 to-purple-600'
