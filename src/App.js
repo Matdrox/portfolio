@@ -12,16 +12,20 @@ function App() {
   );
   const [fontColor, setFontColor] = useState('bg-black');
 
+  const [enabled, setEnabled] = useState(false);
+
   return (
     <div className={`transition ease-in-out duration-500 ${theme}`}>
-      <Themes
+      {/* <Themes
         changeTheme={(theme) => setTheme(theme)}
         changePrimary={(primaryColor) => setPrimaryColor(primaryColor)}
-      />
-      <Page1 changePrimary={primaryColor}/>
+      /> */}
+
+      <Themes enabled={enabled} setEnabled={setEnabled} onClick={() => setEnabled(!enabled)} />
+      <Page1 changePrimary={primaryColor} />
       {/* <Menu changePrimary={primaryColor}></Menu> */}
-      <Page2/>
-      <Page1/>
+      <Page2 />
+      <Page1 />
     </div>
   );
 }

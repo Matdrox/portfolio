@@ -12,15 +12,15 @@ const Page2 = () => {
           My Projects
         </h1>
         <motion.div
-          class='h-40 bg-white shadow-md rounded-md lg:col-span-3 '
+          className='h-40 bg-white shadow-md rounded-md lg:col-span-3 '
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen && <motion.div class='h-64 bg-white shadow-md rounded-md'></motion.div>}
         </motion.div>
-        <motion.div class='h-40 bg-white shadow-md rounded-md'></motion.div>
-        <motion.div class='h-40 bg-white shadow-md rounded-md'></motion.div>
-        <motion.div class='h-40 bg-white shadow-md rounded-md lg:col-span-2'></motion.div>
-        <motion.div class='h-40 bg-white shadow-md rounded-md lg:col-span-3'></motion.div>
+        <motion.div className='h-40 bg-white shadow-md rounded-md'></motion.div>
+        <motion.div className='h-40 bg-white shadow-md rounded-md'></motion.div>
+        <motion.div className='h-40 bg-white shadow-md rounded-md lg:col-span-2'></motion.div>
+        <motion.div className='h-40 bg-white shadow-md rounded-md lg:col-span-3'></motion.div>
         {/* <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
           mollitia
