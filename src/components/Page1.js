@@ -23,10 +23,11 @@ const Page1 = ({ changePrimary }) => {
         <Button text='Contact Me'/>
         </div>
       </div>
-      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}> 
+      <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 1 }}> 
         <img
           src={imgMateiCananau}
-          className='w-96 pointer-events-none rounded-xl shadow-lg p-2 bg-white'
+          className='w-96 pointer-events-none rounded-xl shadow-md p-2 bg-gradient-to-r from-orange-400 to-purple-600'
+          // className='w-96 pointer-events-none rounded-xl shadow-lg p-2 bg-white'
         />
       </motion.div>
       {/* <Box changePrimary={changePrimary} height='h-32' width='w-96' /> */}
