@@ -2,8 +2,19 @@ import Box from './Box';
 import Button from './buttons/Button';
 import imgMateiCananau from '../img/MateiCananau.jpg';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 const Page1 = ({ changePrimary }) => {
+  const projects = useRef(null);
+  const contact = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className='flex justify-center items-center h-screen min-w-screen content-center space-x-40'>
       <div style={{ flexDirection: 'column' }} className='space-y-3'>
@@ -19,8 +30,8 @@ const Page1 = ({ changePrimary }) => {
           Welcome to my portfolio.
         </p>
         <div className='flex space-x-4'>
-          <Button text='My Projects' />
-          <Button text='Contact Me'/>
+          <Button text='My Projects' onClick={() => scrollToSection(projects)} />
+          <Button text='Contact Me' onClick={() => scrollToSection(contact)}/>
         </div>
       </div>
       <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 1 }}>
