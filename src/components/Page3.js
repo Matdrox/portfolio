@@ -5,7 +5,7 @@ import Button from './buttons/Button';
 const Result = () => {
   return (
     <div className='text-white p-2 bg-orange-400 shadow-lg shadow-orange-400/30 rounded-md w-full h-max'>
-      Thank you for your message! <br /> I will respond to it soon.
+      Thank you for your message! I will respond to it asap.
     </div>
   );
 };
@@ -38,7 +38,7 @@ const Page3 = () => {
 
   setTimeout(() => {
     setResult(false);
-  }, 50000);
+  }, 30000);
 
   return (
     <div className='-mt-60 grid place-items-center h-screen'>
