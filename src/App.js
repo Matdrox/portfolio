@@ -21,6 +21,7 @@ function App() {
       <Page1 changePrimary={enabled ? darkColor : lightColor} />
       <Page2 />
       <Page1 />
+      {/* Add a contact form */}
     </div>
   );
 }
