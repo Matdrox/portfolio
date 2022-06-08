@@ -20,7 +20,7 @@ const Page1 = ({ changePrimary }) => {
         </p>
         <div className='flex space-x-4'>
           <Button text='My Projects' />
-          <Button text='Contact Me' />
+          <Button text='Contact Me'/>
         </div>
       </div>
       <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 1 }}>
