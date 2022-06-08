@@ -3,7 +3,11 @@ import emailjs from '@emailjs/browser';
 import Button from './buttons/Button';
 
 const Result = () => {
-  return <p>Thank you for your message! <br/> I will respond to it soon.</p>;
+  return (
+    <div className='text-white p-2 bg-orange-400 shadow-lg shadow-orange-400/30 rounded-md w-full h-max'>
+      Thank you for your message! <br /> I will respond to it soon.
+    </div>
+  );
 };
 
 const Page3 = () => {
@@ -34,13 +38,15 @@ const Page3 = () => {
 
   setTimeout(() => {
     setResult(false);
-  }, 10000);
+  }, 50000);
 
   return (
-    // <div className='mt-24 flex justify-center'>
     <div className='-mt-60 grid place-items-center h-screen'>
+      <h1 className='mt-60 -mb-96 text-5xl font-extrabold underline decoration-purple-600/70'>
+        Contact Me
+      </h1>
       <form
-        className='grid gap-8 w-1/4 h-1/4 lg:grid-cols-4 lg:grid-rows-3'
+        className='grid gap-8 w-1/4 h-1/3 lg:grid-cols-4 lg:grid-rows-3'
         ref={form}
         onSubmit={sendEmail}
       >
@@ -78,12 +84,16 @@ const Page3 = () => {
 
         <div className='lg:col-span-2'>
           <br />
-          <Button type='submit' text={result ? <Result/> : 'Send Mail'} width='100%' height='100%' />
-          <br/>
-          <div className='text-white p-2 bg-orange-400 shadow-lg shadow-orange-400/30 rounded-md w-full h-max'>
-            {/* {result ? <Result /> : null} */}
-            <Result/>
-          </div>
+          <Button
+            type='submit'
+            text='Send Mail'
+            width='100%'
+            height='100%'
+          />
+          <br />
+          <>
+            {result ? <Result /> : null}
+          </>
         </div>
       </form>
     </div>
