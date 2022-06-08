@@ -15,7 +15,7 @@ const Switch = (props) => {
     <div
       onClick={toggleSwitch}
       className={`${props.enabled ? 'bg-purple-600 shadow-lg shadow-purple-600/30' : 'bg-orange-400 shadow-lg shadow-orange-400/30'} transition duration-300 flex-start flex h-[45px] w-[80px] p-1 absolute top-0 right-0 m-10 rounded-full
-    hover:cursor-pointer dark:bg-zinc-700 ${
+    hover:cursor-pointer ${
       props.enabled && 'place-content-end'
     }`}
     >
