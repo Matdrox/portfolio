@@ -6,7 +6,8 @@ import Switch from './components/buttons/Switch';
 
 function App() {
   const lightTheme = 'bg-zinc-100';
-  const darkTheme = 'bg-zinc-800';
+  // const darkTheme = 'bg-zinc-800';
+  const darkTheme = 'bg-slate-900';
 
   const lightColor =
     'bg-white transition ease-in-out duration-500 rounded shadow-md';

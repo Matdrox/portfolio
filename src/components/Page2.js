@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import imgMedusa from '../img/Medusa.jpg'
 
 const Page2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,11 @@ const Page2 = () => {
         <motion.div className='h-40 bg-white shadow-md rounded-md'></motion.div>
         <motion.div className='h-40 bg-white shadow-md rounded-md'></motion.div>
         <motion.div className='h-40 bg-white shadow-md rounded-md lg:col-span-2'></motion.div>
-        <motion.div className='h-40 bg-white shadow-md rounded-md lg:col-span-3'></motion.div>
+        <motion.div className='relative h-40 shadow-md rounded-md lg:col-span-3'>
+          <img src={imgMedusa} className='object-cover w-full h-full rounded-md'/>
+          <div className='bg-white absolute top-0 w-full rounded-md bg-clip-padding h-full backdrop-filter backdrop-blur-md bg-opacity-40'></div>
+        </motion.div>
+        {/* <motion.div className='h-40 bg-white shadow-md rounded-md lg:col-span-3'></motion.div> */}
         {/* <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
           mollitia
