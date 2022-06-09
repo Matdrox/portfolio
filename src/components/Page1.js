@@ -16,8 +16,9 @@ const Page1 = ({ changePrimary }) => {
   };
 
   return (
-    <div className='flex justify-center items-center h-screen min-w-screen content-center space-x-40'>
-      <div style={{ flexDirection: 'column' }} className='space-y-3'>
+    <div className='flex flex-col-reverse text-center justify-center items-center h-screen min-w-screen content-center space-y-20 space-y-reverse
+    md:flex-row md:space-x-40 md:text-left'>
+      <div style={{ flexDirection: 'column' }} className='space-y-3 -my-10'>
         {/* ADD LOAD ANIMATION */}
         {/* SHOW THAT YOU HAVE TO SCROLL */}
         <p className='text-orange-400 font-bold text-5xl'>
@@ -29,7 +30,7 @@ const Page1 = ({ changePrimary }) => {
           <br />
           Welcome to my portfolio.
         </p>
-        <div className='flex space-x-4'>
+        <div className='flex space-x-4 justify-center md:justify-start'>
           <Button text='My Projects' onClick={() => scrollToSection(projects)} />
           <Button text='Contact Me' onClick={() => scrollToSection(contact)}/>
         </div>
@@ -37,7 +38,8 @@ const Page1 = ({ changePrimary }) => {
       <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 1 }}>
         <img
           src={imgMateiCananau}
-          className='w-96 pointer-events-none rounded-xl shadow-md p-2 bg-gradient-to-r from-orange-400 to-purple-600'
+          className='w-96 pointer-events-none rounded-xl shadow-md p-2 bg-gradient-to-r from-orange-400 to-purple-600
+          min-w-[300px]'
           // className='w-96 pointer-events-none rounded-xl shadow-lg p-2 bg-white'
         />
       </motion.div>
