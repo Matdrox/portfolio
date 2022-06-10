@@ -1,4 +1,3 @@
-import Box from './Box';
 import Button from './buttons/Button';
 import imgMateiCananau from '../img/MateiCananau.jpg';
 import { motion, useMotionValue, useTransform } from 'framer-motion';

@@ -9,11 +9,6 @@ function App() {
   // const darkTheme = 'bg-zinc-800';
   const darkTheme = 'bg-slate-900';
 
-  const lightColor =
-    'bg-white transition ease-in-out duration-500 rounded shadow-md';
-  const darkColor =
-    'bg-black transition ease-in-out duration-500 rounded shadow-md';
-
   const lightFont = 'text-zinc-800';
   const darkFont = 'text-zinc-200';
 

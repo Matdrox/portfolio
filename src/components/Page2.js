@@ -15,7 +15,7 @@ const Page2 = ({ fontColor }) => {
           {/* className={`${fontColor} transition duration-200 text-5xl font-extrabold underline decoration-purple-600/70 lg:col-span-5 lg:grid lg:grid-cols-2`}        > */}
           <p className='static z-10'>My Projects</p>
           <div className='bg-purple-600 shadow-md shadow-purple-600/30 absolute -bottom-2 left-0 h-2 w-40 rounded-md'></div>
-          <div className='bg-orange-400 shadow-md shadow-orange-300/30 absolute -bottom-2 left-32 h-2 w-40 rounded-md'></div>
+          <div className='bg-orange-400 shadow-md shadow-orange-400/30 absolute -bottom-2 left-32 h-2 w-40 rounded-md'></div>
         </div>
         <motion.div
           className='h-40 bg-white shadow-md rounded-md lg:col-span-3'
