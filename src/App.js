@@ -14,10 +14,11 @@ function App() {
   const darkColor =
     'bg-black transition ease-in-out duration-500 rounded shadow-md';
 
-  const lightFont = 'text-zinc-600';
-  const darkFont = 'text-zinc-900';
+  const lightFont = 'text-zinc-800';
+  const darkFont = 'text-zinc-200';
 
   const [enabled, setEnabled] = useState(false);
+  const fontColor = enabled ? darkFont : lightFont
 
   return (
     <div
@@ -30,9 +31,9 @@ function App() {
         setEnabled={setEnabled}
         onClick={() => setEnabled(!enabled)}
       />
-      <Page1 changePrimary={enabled ? darkColor : lightColor} />
-      <Page2 />
-      <Page3 />
+      <Page1 fontColor={fontColor} />
+      <Page2 fontColor={fontColor} />
+      <Page3 fontColor={fontColor} />
       {/* Add a contact form */}
     </div>
   );

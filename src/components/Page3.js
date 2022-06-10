@@ -5,12 +5,12 @@ import Button from './buttons/Button';
 const Result = () => {
 	return (
 		<div className='text-white p-2 bg-orange-400 shadow-lg shadow-orange-400/30 rounded-md w-full h-max md:col-span-4 row-start-5'>
-			Thank you for your message! I will respond to it asap.
+			Thank you for your message! I will respond to it ASAP.
 		</div>
 	);
 };
 
-const Page3 = () => {
+const Page3 = ({fontColor}) => {
 	const form = useRef();
 	const [result, setResult] = useState(false);
 
@@ -47,7 +47,7 @@ const Page3 = () => {
 				ref={form}
 				onSubmit={sendEmail}
 			>
-				<h1 className='row-start-1 col-span-4 w-full text-5xl font-extrabold underline decoration-purple-600/70'>
+				<h1 className={`${fontColor} row-start-1 col-span-4 w-full text-5xl font-extrabold underline decoration-purple-600/70`}>
 					Contact Me
 				</h1>
 

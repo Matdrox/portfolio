@@ -4,7 +4,7 @@ import imgMateiCananau from '../img/MateiCananau.jpg';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
-const Page1 = ({ changePrimary }) => {
+const Page1 = ({ fontColor }) => {
   const projects = useRef(null);
   const contact = useRef(null);
 
@@ -16,8 +16,10 @@ const Page1 = ({ changePrimary }) => {
   };
 
   return (
-    <div className='flex flex-col-reverse text-center justify-center items-center h-screen min-w-screen content-center space-y-20 space-y-reverse
-    md:flex-row md:space-x-40 md:text-left'>
+    <div
+      className='flex flex-col-reverse text-center justify-center items-center h-screen min-w-screen content-center space-y-20 space-y-reverse
+    md:flex-row md:space-x-40 md:text-left'
+    >
       <div style={{ flexDirection: 'column' }} className='space-y-3 -my-10'>
         {/* ADD LOAD ANIMATION */}
         {/* SHOW THAT YOU HAVE TO SCROLL */}
@@ -25,14 +27,17 @@ const Page1 = ({ changePrimary }) => {
           {/* <p className='text-zinc-800 font-bold text-5xl'> */}
           Hi, I'm Matei Cananau
         </p>
-        <p className='text-xl text-zinc-600'>
+        <p className={`${fontColor} text-xl transition duration-200`}>
           I am an engineering student at KTH Royal Institute of Technology.
           <br />
           Welcome to my portfolio.
         </p>
         <div className='flex space-x-4 justify-center md:justify-start'>
-          <Button text='My Projects' onClick={() => scrollToSection(projects)} />
-          <Button text='Contact Me' onClick={() => scrollToSection(contact)}/>
+          <Button
+            text='My Projects'
+            onClick={() => scrollToSection(projects)}
+          />
+          <Button text='Contact Me' onClick={() => scrollToSection(contact)} />
         </div>
       </div>
       <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 1 }}>

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 // import { motion, useMotionValue, useTransform } from 'framer-motion';
 
 const Switch = (props) => {
+  // STORE THEME LOCALLY!
   const toggleSwitch = () => props.setEnabled(!props.enabled);
 
   const spring = {
