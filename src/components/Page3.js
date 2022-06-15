@@ -10,7 +10,7 @@ const Result = () => {
 	);
 };
 
-const Page3 = ({fontColor}) => {
+const Page3 = ({ fontColor }) => {
 	const form = useRef();
 	const [result, setResult] = useState(false);
 
@@ -47,9 +47,13 @@ const Page3 = ({fontColor}) => {
 				ref={form}
 				onSubmit={sendEmail}
 			>
-				<h1 className={`${fontColor} row-start-1 col-span-4 w-full text-5xl font-extrabold underline decoration-purple-600/70`}>
-					Contact Me
-				</h1>
+				<div
+					className={`${fontColor} relative row-start-1 col-span-4 w-full text-5xl font-extrabold`}
+				>
+					<p>Contact Me</p>
+					<div className='bg-purple-600 shadow-md shadow-purple-600/30 absolute -bottom-2 left-0 h-2 w-36 rounded-md'></div>
+					<div className='bg-orange-400 shadow-md shadow-orange-400/30 absolute -bottom-2 left-32 h-2 w-40 rounded-md'></div>
+				</div>
 
 				<div className='lg:col-span-2 row-start-2'>
 					<span>Your name</span>
