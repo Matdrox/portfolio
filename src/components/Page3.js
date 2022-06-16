@@ -93,6 +93,7 @@ const Page3 = ({ fontColor }) => {
 					<br />
 				</div>
 				<>{result ? <Result /> : null}</>
+				{/* For Testing: */}
 				{/* <Result /> */}
 			</form>
 		</div>

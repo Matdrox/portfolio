@@ -6,7 +6,6 @@ import Switch from './components/buttons/Switch';
 
 function App() {
 	const lightTheme = 'bg-zinc-100';
-	// const darkTheme = 'bg-zinc-800';
 	const darkTheme = 'bg-zinc-800';
 
 	const lightFont = 'text-zinc-800';
@@ -29,7 +28,6 @@ function App() {
 			<Page1 fontColor={fontColor} />
 			<Page2 fontColor={fontColor} />
 			<Page3 fontColor={fontColor} />
-			{/* Add a contact form */}
 		</div>
 	);
 }
