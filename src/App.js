@@ -31,9 +31,9 @@ function App() {
         text={lang ? 'EN' : 'IA'}
         onClick={() => setLang(!lang)}
       />
-      <Page1 fontColor={fontColor} />
-      <Page2 fontColor={fontColor} />
-      <Page3 fontColor={fontColor} />
+      <Page1 fontColor={fontColor} lang={lang} />
+      <Page2 fontColor={fontColor} lang={lang} />
+      <Page3 fontColor={fontColor} lang={lang} />
     </div>
   );
 }
