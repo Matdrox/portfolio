@@ -3,6 +3,7 @@ import { useState } from 'react';
 import imgMedusa from '../img/Medusa.jpg';
 
 const Page2 = ({ fontColor }) => {
+	// TEXT, IMAGE - IMAGE, TEXT - TEXT, IMAGE
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<div className='grid place-items-center min-w-screen'>
