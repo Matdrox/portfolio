@@ -31,7 +31,6 @@ function App() {
       <Page1 fontColor={fontColor} lang={lang} />
       <Page2 fontColor={fontColor} lang={lang} />
       <Page3 fontColor={fontColor} lang={lang} />
-      <Page3 fontColor={fontColor} lang={lang} />
     </div>
   );
 }

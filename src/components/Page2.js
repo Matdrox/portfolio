@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import imgMedusa from '../img/Medusa.jpg';
 
-const Page2 = ({ fontColor }) => {
+const Page2 = ({ fontColor, lang }) => {
 	// TEXT, IMAGE - IMAGE, TEXT - TEXT, IMAGE
 	const [isOpen, setIsOpen] = useState(false);
 	return (
@@ -11,7 +11,7 @@ const Page2 = ({ fontColor }) => {
 				<div
 					className={`${fontColor} relative transition duration-200 text-5xl font-extrabold lg:col-span-5 lg:grid lg:grid-cols-2`}
 				>
-					<p className='static z-10'>My Projects</p>
+					<p className='static z-10'>{lang ? 'My Projects' : 'Mi Projectos'}</p>
 					<div className='bg-purple-600 shadow-md shadow-purple-600/30 absolute -bottom-2 left-0 h-2 w-40 rounded-md'></div>
 					<div className='bg-orange-400 shadow-md shadow-orange-400/30 absolute -bottom-2 left-32 h-2 w-40 rounded-md'></div>
 				</div>
