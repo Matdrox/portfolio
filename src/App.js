@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import Page1 from './components/Page1';
 import Page2 from './components/Page2';
 import Page3 from './components/Page3';
@@ -27,12 +27,10 @@ function App() {
         setEnabled={setEnabled}
         onClick={() => setEnabled(!enabled)}
       />
-      <LangButton
-        text={lang ? 'EN' : 'IA'}
-        onClick={() => setLang(!lang)}
-      />
+      <LangButton text={lang ? 'EN' : 'IA'} onClick={() => setLang(!lang)} />
       <Page1 fontColor={fontColor} lang={lang} />
       <Page2 fontColor={fontColor} lang={lang} />
+      <Page3 fontColor={fontColor} lang={lang} />
       <Page3 fontColor={fontColor} lang={lang} />
     </div>
   );

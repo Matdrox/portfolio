@@ -1,6 +1,6 @@
 import Button from './buttons/Button';
 import imgMateiCananau from '../img/MateiCananau.jpg';
-import { motion, useMotionValue, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
 const Page1 = ({ fontColor, lang }) => {
@@ -19,7 +19,10 @@ const Page1 = ({ fontColor, lang }) => {
       className='flex flex-col-reverse text-center justify-center items-center h-screen min-w-screen content-center space-y-20 space-y-reverse
     md:flex-row md:space-x-40 md:text-left'
     >
-      <div style={{ flexDirection: 'column' }} className='space-y-3 -my-10 w-1/3'>
+      <div
+        style={{ flexDirection: 'column' }}
+        className='space-y-3 -my-10 md:w-1/3'
+      >
         {/* ADD LOAD ANIMATION */}
         {/* SHOW THAT YOU HAVE TO SCROLL */}
         <p className='text-orange-400 font-bold text-5xl'>
@@ -38,14 +41,17 @@ const Page1 = ({ fontColor, lang }) => {
             text={lang ? 'My Projects' : 'Mi projectos'}
             onClick={() => scrollToSection(projects)}
           />
-          <Button text={lang ? 'Contact Me' : 'Contacto Me'} onClick={() => scrollToSection(contact)} />
+          <Button
+            text={lang ? 'Contact Me' : 'Contacto Me'}
+            onClick={() => scrollToSection(contact)}
+          />
         </div>
       </div>
       <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 1 }}>
         <img
           src={imgMateiCananau}
           className='w-96 pointer-events-none rounded-xl shadow-md p-2 bg-gradient-to-r from-orange-400 to-purple-600
-          min-w-[300px]'
+          min-w-[300px] mt-12'
           // className='w-96 pointer-events-none rounded-xl shadow-lg p-2 bg-white'
         />
       </motion.div>
