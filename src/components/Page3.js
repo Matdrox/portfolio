@@ -52,42 +52,48 @@ const Page3 = ({ fontColor, lang }) => {
       >
         <div
           className={`${fontColor} text-center relative w-full text-5xl font-extrabold
-          md:row-start-1 md:col-span-4 md:text-left`}
+          md:row-start-1 md:col-span-4`}
         >
-          <p className='relative bottom-5 md:top-10'>
+          <p className='relative bottom-5 md:top-8'>
             {lang ? 'Contact Me' : 'Contacto Me'}
           </p>
-          <div className='bg-purple-600 shadow-md shadow-purple-600/30 absolute bottom-3 md:top-[90px] left-12 md:left-0 h-2 w-36 rounded-md'></div>
-          <div className='bg-orange-400 shadow-md shadow-orange-400/30 absolute bottom-3 md:top-[90px] left-44 md:left-32 h-2 w-40 rounded-md'></div>
+          <div
+            className='bg-purple-600 shadow-md shadow-purple-600/30 absolute bottom-3 left-12 h-2 w-40 rounded-md
+          md:top-[80px] md:left-20'
+          ></div>
+          <div
+            className='bg-orange-400 shadow-md shadow-orange-400/30 absolute bottom-3 left-44 h-2 w-40 rounded-md
+          md:top-[80px] md:left-56'
+          ></div>
         </div>
 
-        <div className='lg:col-span-2 row-start-2'>
+        <div className={`${fontColor} lg:col-span-2 row-start-2`}>
           <span>{lang ? 'Your name' : 'Tu nomine'}</span>
           <br />
           <input
-            className='p-3 shadow-md rounded-md w-full h-full'
+            className='p-3 shadow-md rounded-md w-full h-full text-black'
             type='text'
             name='name'
             required
           />
         </div>
 
-        <div className='lg:col-span-2 row-start-3'>
+        <div className={`${fontColor} lg:col-span-2 row-start-3`}>
           <span>{lang ? 'Your email' : 'Tu email'}</span>
           <br />
           <input
-            className='p-3 shadow-md rounded-md w-full h-full'
+            className='p-3 shadow-md rounded-md w-full h-full text-black'
             type='text'
             name='email'
             required
           />
         </div>
 
-        <div className='lg:col-span-2 lg:row-span-3 row-span-2'>
+        <div className={`${fontColor} lg:col-span-2 lg:row-span-3 row-span-2`}>
           <label htmlFor='message'>Message</label>
           <br />
           <textarea
-            className='p-3 shadow-md rounded-md w-full h-full'
+            className='p-3 shadow-md rounded-md w-full h-full text-black'
             name='message'
             required
           />
