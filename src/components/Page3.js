@@ -45,16 +45,20 @@ const Page3 = ({ fontColor, lang }) => {
   return (
     <div className='-mt-52 grid place-items-center h-screen'>
       <form
-        className='mt-52 grid gap-8 w-11/12 md:grid-cols-5 md:grid-rows-4 md:w-auto md:h-auto'
+        className='mt-52 w-11/12 flex-row align-middle
+        md:grid md:gap-8 md:grid-cols-5 md:grid-rows-4 md:w-auto md:h-auto'
         ref={form}
         onSubmit={sendEmail}
       >
         <div
-          className={`${fontColor} relative row-start-1 col-span-4 w-full text-5xl font-extrabold`}
+          className={`${fontColor} text-center relative w-full text-5xl font-extrabold
+          md:row-start-1 md:col-span-4 md:text-left`}
         >
-          <p>{lang ? 'Contact Me' : 'Contacto Me'}</p>
-          <div className='bg-purple-600 shadow-md shadow-purple-600/30 absolute -bottom-2 left-0 h-2 w-36 rounded-md'></div>
-          <div className='bg-orange-400 shadow-md shadow-orange-400/30 absolute -bottom-2 left-32 h-2 w-40 rounded-md'></div>
+          <p className='relative bottom-5 md:top-10'>
+            {lang ? 'Contact Me' : 'Contacto Me'}
+          </p>
+          <div className='bg-purple-600 shadow-md shadow-purple-600/30 absolute bottom-3 md:top-[90px] left-12 md:left-0 h-2 w-36 rounded-md'></div>
+          <div className='bg-orange-400 shadow-md shadow-orange-400/30 absolute bottom-3 md:top-[90px] left-44 md:left-32 h-2 w-40 rounded-md'></div>
         </div>
 
         <div className='lg:col-span-2 row-start-2'>
@@ -89,7 +93,7 @@ const Page3 = ({ fontColor, lang }) => {
           />
         </div>
 
-        <div className='lg:col-span-2'>
+        <div className='lg:col-span-2 h-16'>
           <br />
           <Button
             type='submit'
