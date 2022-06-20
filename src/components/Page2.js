@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import imgMedusa from '../img/Medusa.jpg';
+import { FaReact } from 'react-icons/fa';
 
 const Page2 = ({ fontColor, lang }) => {
   // TEXT, IMAGE - IMAGE, TEXT - TEXT, IMAGE
@@ -66,6 +67,9 @@ const Page2 = ({ fontColor, lang }) => {
         </p>
         <br />
         <h2 className='text-xl'>TECHNOLOGIES USED</h2>
+				<div>
+					<FaReact className='text-3xl text-cyan-600 transition hover:text-cyan-900'/>
+				</div>
       </motion.div>
       <motion.div
         className='bg-white rounded-lg shadow-lg min-h-[350px] text-center'
