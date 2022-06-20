@@ -4,7 +4,7 @@ import Button from './buttons/Button';
 
 const Result = ({ lang }) => {
   return (
-    <div className='text-white p-2 bg-orange-400 shadow-lg shadow-orange-400/30 rounded-md w-full h-max md:col-span-4 row-start-5'>
+    <div className='text-white p-2 bg-orange-400 shadow-lg shadow-orange-400/30 rounded-md w-full h-max lg:col-span-4 row-start-5'>
       {lang
         ? 'Thank you for your message! I will respond to it ASAP.'
         : 'Gratias por tu message! Io respondera tosto a illo.'}
@@ -46,24 +46,24 @@ const Page3 = ({ fontColor, lang }) => {
     <div className='-mt-52 grid place-items-center h-screen'>
       <form
         className='mt-52 w-11/12 flex-row align-middle
-        md:grid md:gap-8 md:grid-cols-5 md:grid-rows-4 md:w-auto md:h-auto'
+        lg:grid lg:gap-8 lg:grid-cols-5 lg:grid-rows-4 lg:w-auto lg:h-auto'
         ref={form}
         onSubmit={sendEmail}
       >
         <div
           className={`${fontColor} text-center relative w-full text-5xl font-extrabold
-          md:row-start-1 md:col-span-4`}
+          lg:row-start-1 lg:col-span-4`}
         >
-          <p className='relative bottom-5 md:top-8'>
+          <p className='relative bottom-5 lg:top-8'>
             {lang ? 'Contact Me' : 'Contacto Me'}
           </p>
           <div
             className='bg-purple-600 shadow-md shadow-purple-600/30 absolute bottom-3 left-12 h-2 w-40 rounded-md
-          md:top-[80px] md:left-20'
+          lg:top-[80px] lg:left-20'
           ></div>
           <div
             className='bg-orange-400 shadow-md shadow-orange-400/30 absolute bottom-3 left-44 h-2 w-40 rounded-md
-          md:top-[80px] md:left-56'
+          lg:top-[80px] lg:left-56'
           ></div>
         </div>
 
