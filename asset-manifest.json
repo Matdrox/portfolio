@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.71dbceb5.css",
-    "main.js": "/portfolio/static/js/main.a0677537.js",
+    "main.css": "/portfolio/static/css/main.c2655ac8.css",
+    "main.js": "/portfolio/static/js/main.05948a71.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/MateiCananau.jpg": "/portfolio/static/media/MateiCananau.de385819392913f89266.jpg",
-    "static/media/Medusa.jpg": "/portfolio/static/media/Medusa.58fa879da3bc63c08a78.jpg",
+    "static/media/imgHellenic1.png": "/portfolio/static/media/imgHellenic1.d9eb530373c4d39de4ab.png",
+    "static/media/imgHellenic3.png": "/portfolio/static/media/imgHellenic3.e701573d8ad5c0dcfcac.png",
+    "static/media/imgHellenic2.png": "/portfolio/static/media/imgHellenic2.207cd7d0536fe8529d65.png",
+    "static/media/imgHellenic4.png": "/portfolio/static/media/imgHellenic4.2a1f776a21b3d853a3e5.png",
     "index.html": "/portfolio/index.html",
-    "main.71dbceb5.css.map": "/portfolio/static/css/main.71dbceb5.css.map",
-    "main.a0677537.js.map": "/portfolio/static/js/main.a0677537.js.map",
+    "main.c2655ac8.css.map": "/portfolio/static/css/main.c2655ac8.css.map",
+    "main.05948a71.js.map": "/portfolio/static/js/main.05948a71.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71dbceb5.css",
-    "static/js/main.a0677537.js"
+    "static/css/main.c2655ac8.css",
+    "static/js/main.05948a71.js"
   ]
 }
