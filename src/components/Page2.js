@@ -13,7 +13,7 @@ const Page2 = ({ fontColor, lang }) => {
   }, []);
   // TEXT, IMAGE - IMAGE, TEXT - TEXT, IMAGE
   return (
-    <div className='grid grid-cols-1 gap-2 lg:grid-cols-2 mx-5'>
+    <div className={`${fontColor} grid grid-cols-1 gap-2 lg:grid-cols-2 mx-5`}>
       <motion.div
         className='min-h-[350px] flex flex-col justify-center items-center text-center'
         initial={{ opacity: 0 }}
@@ -43,25 +43,25 @@ const Page2 = ({ fontColor, lang }) => {
         <div className='flex flex-row'>
           <div className='flex flex-col justify-center items-center group -mx-2 z-10'>
             <FaReact className='text-3xl text-cyan-600 transition group-hover:text-cyan-900' />
-            <div className='bg-zinc-300 rounded text-center text-md flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
+            <div className='bg-zinc-300 rounded text-black text-center text-md flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
               React
             </div>
           </div>
           <div className='flex flex-col justify-center items-center group -mx-2'>
             <SiTailwindcss className='text-3xl text-cyan-600 transition group-hover:text-cyan-900' />
-            <div className='bg-zinc-300 rounded text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
+            <div className='bg-zinc-300 rounded text-black text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
               Tailwind CSS
             </div>
           </div>
           <div className='flex flex-col justify-center items-center group -mx-2 z-10'>
             <TbApi className='text-3xl text-cyan-600 transition group-hover:text-cyan-900' />
-            <div className='bg-zinc-300 rounded text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
+            <div className='bg-zinc-300 rounded text-black text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
               APIs
             </div>
           </div>
           <div className='flex flex-col justify-center items-center group z-10'>
             <FaDatabase className='text-2xl text-cyan-600 transition group-hover:text-cyan-900' />
-            <div className='bg-zinc-300 rounded text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
+            <div className='bg-zinc-300 rounded text-black text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
               Databases
             </div>
           </div>
@@ -95,7 +95,7 @@ const Page2 = ({ fontColor, lang }) => {
                 key={image}
               >
                 <img
-                  className='w-full h-full rounded pointer-events-none'
+                  className='w-full h-full rounded shadow-md pointer-events-none'
                   src={image}
                   alt=''
                 />
