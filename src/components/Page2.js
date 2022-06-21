@@ -1,45 +1,19 @@
 import { motion } from 'framer-motion';
-import { FaReact } from 'react-icons/fa';
+import { useState, useRef, useEffect } from 'react';
+import { FaReact, FaDatabase } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
+import { TbApi } from 'react-icons/tb';
+import images from './Images';
 
 const Page2 = ({ fontColor, lang }) => {
+  const [width, setWidth] = useState(0);
+  const carousel = useRef();
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, []);
   // TEXT, IMAGE - IMAGE, TEXT - TEXT, IMAGE
   return (
-    // <div className='grid place-items-center min-w-screen'>
-    // 	<div className='grid gap-5 w-3/4 lg:grid-cols-5'>
-    // 		<div
-    // 			className={`${fontColor} relative transition duration-200 text-5xl font-extrabold lg:col-span-5 lg:grid lg:grid-cols-2`}
-    // 		>
-    // 			<p className='z-10'>{lang ? 'My Projects' : 'Mi Projectos'}</p>
-    // 			<div className='bg-purple-600 shadow-md shadow-purple-600/30 absolute -bottom-2 left-0 h-2 w-40 rounded-md'></div>
-    // 			<div className='bg-orange-400 shadow-md shadow-orange-400/30 absolute -bottom-2 left-32 h-2 w-40 rounded-md'></div>
-    // 		</div>
-    // 		<motion.div
-    // 			className='h-40 bg-white shadow-md rounded-md lg:col-span-3'
-    // 			onClick={() => setIsOpen(!isOpen)}
-    // 		>
-    // 			{isOpen && (
-    // 				<motion.div class='h-64 bg-white shadow-md rounded-md'></motion.div>
-    // 			)}
-    // 		</motion.div>
-    // 		<motion.div className='h-40 bg-white shadow-md rounded-md'></motion.div>
-    // 		<motion.div className='h-40 bg-white shadow-md rounded-md'></motion.div>
-    // 		<motion.div className='h-40 bg-white shadow-md rounded-md lg:col-span-2'></motion.div>
-    // 		<motion.div className='relative h-40 shadow-md rounded-md lg:col-span-3'>
-    // 			<img
-    // 				src={imgMedusa}
-    // 				className='object-cover w-full h-full rounded-md'
-    // 			/>
-    // 			<div className='bg-white absolute top-0 w-full rounded-md bg-clip-padding h-full backdrop-filter backdrop-blur-md bg-opacity-40'></div>
-    // 		</motion.div>
-    // 		{/* <motion.div className='h-40 bg-white shadow-md rounded-md lg:col-span-3'></motion.div> */}
-    // 		{/* <p>
-    //       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-    //       mollitia
-    //     </p> */}
-    // 	</div>
-    // </div>
-    <div className='grid grid-cols-1 gap-2 lg:grid-cols-2'>
+    <div className='grid grid-cols-1 gap-2 lg:grid-cols-2 mx-5'>
       <motion.div
         className='min-h-[350px] flex flex-col justify-center items-center text-center'
         initial={{ opacity: 0 }}
@@ -79,18 +53,56 @@ const Page2 = ({ fontColor, lang }) => {
               Tailwind CSS
             </div>
           </div>
+          <div className='flex flex-col justify-center items-center group -mx-2 z-10'>
+            <TbApi className='text-3xl text-cyan-600 transition group-hover:text-cyan-900' />
+            <div className='bg-zinc-300 rounded text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
+              APIs
+            </div>
+          </div>
+          <div className='flex flex-col justify-center items-center group z-10'>
+            <FaDatabase className='text-2xl text-cyan-600 transition group-hover:text-cyan-900' />
+            <div className='bg-zinc-300 rounded text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
+              Databases
+            </div>
+          </div>
         </div>
-        <h2 className='text-xl'>SOURCE CODE</h2>
-        
+        <a
+          className='underline'
+          href='https://github.com/Matdrox/hellenic-database'
+          target='_blank'
+        >
+          <h2 className='text-md'>SOURCE CODE</h2>
+        </a>
       </motion.div>
       <motion.div
-        className='bg-white rounded-lg shadow-lg min-h-[350px] text-center'
+        className='bg-white rounded-lg shadow-lg min-h-[350px] text-center cursor-grab overflow-hidden'
+        ref={carousel}
         transition={{ delay: 0.4 }}
         initial={{ opacity: 0, y: '20%' }}
         whileInView={{ opacity: 1, y: '0' }}
         viewport={{ once: false }}
       >
-        IMAGE
+        <motion.div
+          whileTap={{ cursor: 'grabbing' }}
+          drag='x'
+          dragConstraints={{ right: 0, left: -width }}
+          className='flex'
+        >
+          {images.map((image) => {
+            return (
+              <motion.div
+                className='h-[40rem] min-w-[30rem] py-4 px-2'
+                key={image}
+              >
+                <img
+                  className='w-full h-full rounded pointer-events-none'
+                  src={image}
+                  alt=''
+                />
+              </motion.div>
+            );
+          })}
+        </motion.div>
       </motion.div>
       <motion.div
         className='bg-white rounded-lg shadow-lg min-h-[350px] text-center'

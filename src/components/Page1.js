@@ -16,7 +16,7 @@ const Page1 = ({ fontColor, lang }) => {
 
   return (
     <div
-      className='flex flex-col-reverse text-center justify-center items-center h-[110vh] min-w-screen content-center space-y-20 space-y-reverse
+      className='flex flex-col-reverse text-center justify-center items-center h-screen min-w-screen content-center space-y-20 space-y-reverse
     md:flex-row md:space-x-40 md:text-left'
     >
       <div
