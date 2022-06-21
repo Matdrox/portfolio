@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
-import imgMedusa from '../img/Medusa.jpg';
 import { FaReact } from 'react-icons/fa';
+import { SiTailwindcss } from 'react-icons/si';
 
 const Page2 = ({ fontColor, lang }) => {
   // TEXT, IMAGE - IMAGE, TEXT - TEXT, IMAGE
@@ -67,9 +66,22 @@ const Page2 = ({ fontColor, lang }) => {
         </p>
         <br />
         <h2 className='text-xl'>TECHNOLOGIES USED</h2>
-				<div>
-					<FaReact className='text-3xl text-cyan-600 transition hover:text-cyan-900'/>
-				</div>
+        <div className='flex flex-row'>
+          <div className='flex flex-col justify-center items-center group -mx-2 z-10'>
+            <FaReact className='text-3xl text-cyan-600 transition group-hover:text-cyan-900' />
+            <div className='bg-zinc-300 rounded text-center text-md flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
+              React
+            </div>
+          </div>
+          <div className='flex flex-col justify-center items-center group -mx-2'>
+            <SiTailwindcss className='text-3xl text-cyan-600 transition group-hover:text-cyan-900' />
+            <div className='bg-zinc-300 rounded text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
+              Tailwind CSS
+            </div>
+          </div>
+        </div>
+        <h2 className='text-xl'>SOURCE CODE</h2>
+        
       </motion.div>
       <motion.div
         className='bg-white rounded-lg shadow-lg min-h-[350px] text-center'
