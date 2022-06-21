@@ -91,7 +91,7 @@ const Page2 = ({ fontColor, lang }) => {
           {images.map((image) => {
             return (
               <motion.div
-                className='h-[40rem] min-w-[30rem] py-4 px-2'
+                className='h-[450px] min-w-[22rem] py-4 px-2'
                 key={image}
               >
                 <img
