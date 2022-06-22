@@ -111,7 +111,7 @@ const Page2 = ({ fontColor, lang }) => {
         whileInView={{ opacity: 1, y: '0' }}
         viewport={{ once: false }}
       >
-        IMAGE
+        IMAGES
       </motion.div>
       <motion.div
         className='min-h-[350px] flex flex-col justify-center items-center'
@@ -140,7 +140,7 @@ const Page2 = ({ fontColor, lang }) => {
         whileInView={{ opacity: 1, y: '0' }}
         viewport={{ once: false }}
       >
-        IMAGE
+        IMAGES
       </motion.div>
     </div>
   );
