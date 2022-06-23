@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
 import imagesHellenic from './imgComps/ImagesHellenic';
+import imagesSphere from './imgComps/ImagesSphere';
 import { FaReact, FaDatabase } from 'react-icons/fa';
 import { SiTailwindcss, SiPython } from 'react-icons/si';
 import { TbApi, TbMathSymbols } from 'react-icons/tb';
@@ -92,7 +93,7 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
           {imagesHellenic.map((image) => {
             return (
               <motion.div
-                className='h-[450px] min-w-[22rem] py-4 px-2'
+                className='h-[600px] min-w-[33em] py-4 px-2'
                 key={image}
               >
                 <img
@@ -119,10 +120,10 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
           dragConstraints={{ right: 0, left: -width }}
           className='flex'
         >
-          {imagesHellenic.map((image) => {
+          {imagesSphere.map((image) => {
             return (
               <motion.div
-                className='h-[450px] min-w-[22rem] py-4 px-2'
+                className='h-[600px] min-w-[33em] py-4 px-2'
                 key={image}
               >
                 <img
