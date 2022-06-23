@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5ee896ec.css",
-    "main.js": "/portfolio/static/js/main.564a5906.js",
+    "main.css": "/portfolio/static/css/main.31c930ed.css",
+    "main.js": "/portfolio/static/js/main.6dd9ade3.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/imgHellenic1.png": "/portfolio/static/media/imgHellenic1.79464fee973e93c153ef.png",
     "static/media/MateiCananau.jpg": "/portfolio/static/media/MateiCananau.de385819392913f89266.jpg",
@@ -13,12 +13,12 @@
     "static/media/imgSphere1.png": "/portfolio/static/media/imgSphere1.f52e5d6db51df14db475.png",
     "static/media/imgSphere3.png": "/portfolio/static/media/imgSphere3.8ac29d8ca0286b929ee8.png",
     "index.html": "/portfolio/index.html",
-    "main.5ee896ec.css.map": "/portfolio/static/css/main.5ee896ec.css.map",
-    "main.564a5906.js.map": "/portfolio/static/js/main.564a5906.js.map",
+    "main.31c930ed.css.map": "/portfolio/static/css/main.31c930ed.css.map",
+    "main.6dd9ade3.js.map": "/portfolio/static/js/main.6dd9ade3.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ee896ec.css",
-    "static/js/main.564a5906.js"
+    "static/css/main.31c930ed.css",
+    "static/js/main.6dd9ade3.js"
   ]
 }
