@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
-import imagesHellenic from './Images';
+import imagesHellenic from './imgComps/ImagesHellenic';
 import { FaReact, FaDatabase } from 'react-icons/fa';
 import { SiTailwindcss, SiPython } from 'react-icons/si';
 import { TbApi, TbMathSymbols } from 'react-icons/tb';
@@ -106,13 +106,34 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
         </motion.div>
       </motion.div>
       <motion.div
-        className='bg-white rounded-lg shadow-lg min-h-[350px] text-center'
+        className={`${boxColor} rounded-lg shadow-lg min-h-[350px] text-center cursor-grab overflow-hidden`}
+        ref={carousel}
         transition={{ delay: 0.4 }}
         initial={{ opacity: 0, y: '20%' }}
         whileInView={{ opacity: 1, y: '0' }}
         viewport={{ once: false }}
       >
-        IMAGES
+        <motion.div
+          whileTap={{ cursor: 'grabbing' }}
+          drag='x'
+          dragConstraints={{ right: 0, left: -width }}
+          className='flex'
+        >
+          {imagesHellenic.map((image) => {
+            return (
+              <motion.div
+                className='h-[450px] min-w-[22rem] py-4 px-2'
+                key={image}
+              >
+                <img
+                  className='w-full h-full rounded shadow-md pointer-events-none'
+                  src={image}
+                  alt=''
+                />
+              </motion.div>
+            );
+          })}
+        </motion.div>
       </motion.div>
       <motion.div
         className='min-h-[350px] flex flex-col justify-center items-center text-center'
@@ -131,6 +152,9 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
           <br />
           It is also posible to click anywhere on the sphere to move the light
           source, updating the sphere.
+          <br />
+          The application allows the user to save the displayed sphere to a text
+          file
         </p>
         <br />
         <h2 className='text-xl'>TECHNOLOGIES USED</h2>
@@ -153,7 +177,6 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
               GUI
             </div>
           </div>
-
         </div>
         <a
           className='underline'
