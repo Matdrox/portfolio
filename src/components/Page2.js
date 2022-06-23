@@ -15,7 +15,19 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
   }, []);
   // TEXT, IMAGE - IMAGE, TEXT - TEXT, IMAGE
   return (
-    <div className={`${fontColor} grid grid-cols-1 gap-2 lg:grid-cols-2 mx-5`}>
+    <div
+      className={`${fontColor} mt-20 grid grid-cols-1 gap-2 lg:grid-cols-2 mx-5`}
+    >
+      <div
+        className={`${fontColor} text-center relative w-full text-5xl font-extrabold lg:col-span-2 mb-10`}
+      >
+        <h1 className='relative'>{lang ? 'My Projects' : 'Mi Projectos'}</h1>
+        {/* <div className='flex justify-center'> */}
+        <div className='grid grid-rows-1 w-1/6 ml-auto mr-auto'>
+          <div className='bg-purple-600 shadow-md shadow-purple-600/30 h-2 w-full rounded-md row-start-1 ml-2'></div>
+          <div className='bg-orange-400 shadow-md shadow-orange-400/30 h-2 w-full rounded-md row-start-1 mr-2'></div>
+        </div>
+      </div>
       <motion.div
         className='min-h-[350px] flex flex-col justify-center items-center text-center'
         initial={{ opacity: 0 }}
