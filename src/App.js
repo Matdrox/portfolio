@@ -9,13 +9,17 @@ function App() {
   const lightTheme = 'bg-zinc-100';
   const darkTheme = 'bg-zinc-800';
 
+  const lightBox = 'bg-white';
+  const darkBox = 'bg-zinc-900';
+
   const lightFont = 'text-zinc-800';
   const darkFont = 'text-zinc-200';
 
   const [enabled, setEnabled] = useState(false);
   const [lang, setLang] = useState('english');
+  
   const fontColor = enabled ? darkFont : lightFont;
-
+  const boxColor = enabled ? darkBox : lightBox;
   return (
     <div
       className={`transition ease-in-out duration-500 ${
@@ -29,7 +33,7 @@ function App() {
       />
       <LangButton text={lang ? 'EN' : 'IA'} onClick={() => setLang(!lang)} />
       <Page1 fontColor={fontColor} lang={lang} />
-      <Page2 fontColor={fontColor} lang={lang} />
+      <Page2 fontColor={fontColor} lang={lang} boxColor={boxColor}/>
       <Page3 fontColor={fontColor} lang={lang} />
     </div>
   );

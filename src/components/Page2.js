@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
+import imagesHellenic from './Images';
 import { FaReact, FaDatabase } from 'react-icons/fa';
-import { SiTailwindcss } from 'react-icons/si';
-import { TbApi } from 'react-icons/tb';
-import images from './Images';
+import { SiTailwindcss, SiPython } from 'react-icons/si';
+import { TbApi, TbMathSymbols } from 'react-icons/tb';
+import { BsDisplay } from 'react-icons/bs';
 
-const Page2 = ({ fontColor, lang }) => {
+const Page2 = ({ fontColor, lang, boxColor }) => {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
   useEffect(() => {
@@ -41,26 +42,26 @@ const Page2 = ({ fontColor, lang }) => {
         <br />
         <h2 className='text-xl'>TECHNOLOGIES USED</h2>
         <div className='flex flex-row'>
-          <div className='flex flex-col justify-center items-center group -mx-2 z-10'>
-            <FaReact className='text-3xl text-cyan-600 transition group-hover:text-cyan-900' />
-            <div className='bg-zinc-300 rounded text-black text-center text-md flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
+          <div className='flex flex-col justify-center items-center group -mx-4 z-10'>
+            <FaReact className='text-3xl text-purple-600 transition group-hover:text-orange-400' />
+            <div className='bg-zinc-300 rounded text-black text-center text-sm flex items-center justify-center transition mt-1 duration-300 opacity-0 group-hover:opacity-100'>
               React
             </div>
           </div>
-          <div className='flex flex-col justify-center items-center group -mx-2'>
-            <SiTailwindcss className='text-3xl text-cyan-600 transition group-hover:text-cyan-900' />
+          <div className='flex flex-col justify-center items-center group -mx-3'>
+            <SiTailwindcss className='text-3xl text-purple-600 transition group-hover:text-orange-400' />
             <div className='bg-zinc-300 rounded text-black text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
               Tailwind CSS
             </div>
           </div>
-          <div className='flex flex-col justify-center items-center group -mx-2 z-10'>
-            <TbApi className='text-3xl text-cyan-600 transition group-hover:text-cyan-900' />
+          <div className='flex flex-col justify-center items-center group -mx-3 z-10'>
+            <TbApi className='text-3xl text-purple-600 transition group-hover:text-orange-400' />
             <div className='bg-zinc-300 rounded text-black text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
               APIs
             </div>
           </div>
-          <div className='flex flex-col justify-center items-center group z-10'>
-            <FaDatabase className='text-2xl text-cyan-600 transition group-hover:text-cyan-900' />
+          <div className='flex flex-col justify-center items-center group -mx-2'>
+            <FaDatabase className='text-2xl text-purple-600 transition group-hover:text-orange-400' />
             <div className='bg-zinc-300 rounded text-black text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
               Databases
             </div>
@@ -75,7 +76,7 @@ const Page2 = ({ fontColor, lang }) => {
         </a>
       </motion.div>
       <motion.div
-        className='bg-white rounded-lg shadow-lg min-h-[350px] text-center cursor-grab overflow-hidden'
+        className={`${boxColor} rounded-lg shadow-lg min-h-[350px] text-center cursor-grab overflow-hidden`}
         ref={carousel}
         transition={{ delay: 0.4 }}
         initial={{ opacity: 0, y: '20%' }}
@@ -88,7 +89,7 @@ const Page2 = ({ fontColor, lang }) => {
           dragConstraints={{ right: 0, left: -width }}
           className='flex'
         >
-          {images.map((image) => {
+          {imagesHellenic.map((image) => {
             return (
               <motion.div
                 className='h-[450px] min-w-[22rem] py-4 px-2'
@@ -114,14 +115,53 @@ const Page2 = ({ fontColor, lang }) => {
         IMAGES
       </motion.div>
       <motion.div
-        className='min-h-[350px] flex flex-col justify-center items-center'
+        className='min-h-[350px] flex flex-col justify-center items-center text-center'
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: false }}
       >
-        <p>TEXT</p>
-        <p>TEXT</p>
-        <p>TEXT</p>
+        <h1 className='text-3xl'>MATHEMATICAL SPHERE</h1>
+        <br />
+        <p>
+          Python application that displays a sphere along with its shadow using
+          the dot product.
+          <br />
+          The user enters the lightsource's position and the program outputs a
+          mathematically correct sphere.
+          <br />
+          It is also posible to click anywhere on the sphere to move the light
+          source, updating the sphere.
+        </p>
+        <br />
+        <h2 className='text-xl'>TECHNOLOGIES USED</h2>
+        <div className='flex flex-row'>
+          <div className='flex flex-col justify-center items-center group mt-1 -mx-6 z-10'>
+            <SiPython className='text-2xl text-orange-400 transition group-hover:text-purple-600' />
+            <div className='bg-zinc-300 rounded text-black text-center text-sm flex items-center justify-center transition mt-1 duration-300 opacity-0 group-hover:opacity-100'>
+              Python
+            </div>
+          </div>
+          <div className='flex flex-col justify-center items-center group -mx-2'>
+            <TbMathSymbols className='text-3xl text-orange-400 transition group-hover:text-purple-600' />
+            <div className='bg-zinc-300 rounded text-black text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
+              Pure Maths
+            </div>
+          </div>
+          <div className='flex flex-col justify-center items-center group -mx-2 z-10'>
+            <BsDisplay className='text-3xl text-orange-400 transition group-hover:text-purple-600' />
+            <div className='bg-zinc-300 rounded text-black text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
+              GUI
+            </div>
+          </div>
+
+        </div>
+        <a
+          className='underline'
+          href='https://github.com/Matdrox/sphere'
+          target='_blank'
+        >
+          <h2 className='text-md'>SOURCE CODE</h2>
+        </a>
       </motion.div>
       <motion.div
         className='min-h-[350px] flex flex-col justify-center items-center'
