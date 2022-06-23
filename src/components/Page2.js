@@ -34,11 +34,14 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false }}
       >
-        <h1 className='text-3xl'>HELLENIC DATABASE</h1>
+        <h1 className='text-3xl'>
+          {lang ? 'HELLENIC DATABASE' : 'BASE DE DATOS HELLENIC'}
+        </h1>
         <br />
         <p>
-          Website for looking up various Greek mythology deities with the help
-          of an altered{' '}
+          {lang
+            ? 'Website for looking up various Greek mythology deities with the help of a modified '
+            : 'Sito web por cercar varie deos Grec con un '}
           <a
             href='https://www.npmjs.com/package/greek-mythology-data'
             target='_blank'
@@ -46,14 +49,17 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
           >
             API
           </a>
-          . <br />
-          The user can use the search function to look up a specific god.
+          {lang ? '.' : ' modificate.'} <br />
+          {lang
+            ? 'The user can use the search function to look up a specific god.'
+            : 'Le usator pote usar le function del cerca a perquire un deo specific.'}
           <br />
-          It is also posible to click on any card to get more information about
-          the card's god.
+          {lang
+            ? "It is also posible to click on any card to get more information about the card's god."
+            : 'Es possibile clickar a omne carta a vide plus information de le deo de carta.'}
         </p>
         <br />
-        <h2 className='text-xl'>TECHNOLOGIES USED</h2>
+        <h2 className='text-xl'>{lang ? 'TECHNOLOGIES USED' : 'TECHNOLOGIA USAVA'}</h2>
         <div className='flex flex-row'>
           <div className='flex flex-col justify-center items-center group -mx-4 z-10'>
             <FaReact className='text-3xl text-purple-600 transition group-hover:text-orange-400' />
@@ -85,7 +91,7 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
           href='https://github.com/Matdrox/hellenic-database'
           target='_blank'
         >
-          <h2 className='text-md'>SOURCE CODE</h2>
+          <h2 className='text-md'>{lang ? 'SOURCE CODE' : 'LE CODICE ORIGINAL'}</h2>
         </a>
       </motion.div>
       <motion.div
