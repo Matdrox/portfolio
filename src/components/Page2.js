@@ -1,7 +1,8 @@
-import { motion } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import imagesHellenic from './imgComps/ImagesHellenic';
 import imagesSphere from './imgComps/ImagesSphere';
+import Button from './buttons/Button';
 import { FaReact, FaDatabase } from 'react-icons/fa';
 import { SiTailwindcss, SiPython } from 'react-icons/si';
 import { TbApi, TbMathSymbols } from 'react-icons/tb';
@@ -59,7 +60,9 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
             : 'Es possibile clickar a omne carta a vide plus information de le deo de carta.'}
         </p>
         <br />
-        <h2 className='text-xl'>{lang ? 'TECHNOLOGIES USED' : 'TECHNOLOGIA USAVA'}</h2>
+        <h2 className='text-xl'>
+          {lang ? 'TECHNOLOGIES USED' : 'TECHNOLOGIA USAVA'}
+        </h2>
         <div className='flex flex-row'>
           <div className='flex flex-col justify-center items-center group -mx-4 z-10'>
             <FaReact className='text-3xl text-purple-600 transition group-hover:text-orange-400' />
@@ -86,12 +89,25 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
             </div>
           </div>
         </div>
+        <Button
+          text={lang ? 'VISIT WEBSITE' : 'VISITA SITO WEB'}
+          width='200px'
+          onClick={() => {
+            window.open(
+              'https://matdrox.github.io/hellenic-database/',
+              '_blank'
+            );
+          }}
+        />
         <a
           className='underline'
           href='https://github.com/Matdrox/hellenic-database'
           target='_blank'
         >
-          <h2 className='text-md'>{lang ? 'SOURCE CODE' : 'LE CODICE ORIGINAL'}</h2>
+          <br/>
+          <h2 className='text-md'>
+            {lang ? 'SOURCE CODE' : 'LE CODICE ORIGINAL'}
+          </h2>
         </a>
       </motion.div>
       <motion.div

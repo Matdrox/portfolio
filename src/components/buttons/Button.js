@@ -13,6 +13,7 @@ const Button = (props) => {
         width: `${props.width}`,
         height: `${props.height}`,
       }}
+      onClick={props.onClick}
     >
       <p className='text-white pointer-events-none'>{props.text}</p>
     </button>
