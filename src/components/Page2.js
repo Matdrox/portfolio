@@ -104,7 +104,7 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
           href='https://github.com/Matdrox/hellenic-database'
           target='_blank'
         >
-          <br/>
+          <br />
           <h2 className='text-md'>
             {lang ? 'SOURCE CODE' : 'LE CODICE ORIGINAL'}
           </h2>
@@ -176,23 +176,31 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false }}
       >
-        <h1 className='text-3xl'>{lang ? 'MATHEMATICAL SPHERE' : 'SPHERA MATHEMATICA'}</h1>
+        <h1 className='text-3xl'>
+          {lang ? 'MATHEMATICAL SPHERE' : 'SPHERA MATHEMATIC'}
+        </h1>
         <br />
         <p>
-          Python application that displays a sphere along with its shadow using
-          the dot product.
+          {lang
+            ? 'Python application that displays a sphere along with its shadow using the dot product.'
+            : 'Application de Python que monstrar un sphera con su umbra usante le producto scalare.'}
           <br />
-          The user enters the lightsource's position and the program outputs a
-          mathematically correct sphere.
+          {lang
+            ? "The user enters the lightsource's position and the program outputs a mathematically correct sphere."
+            : 'Le usator inscriber le position del origine del lumine e le programma monstrar un sphera correcte mathematic.'}
           <br />
-          It is also posible to click anywhere on the sphere to move the light
-          source, updating the sphere.
+          {lang
+            ? 'It is also posible to click anywhere on the sphere to move the light source, updating the sphere.'
+            : 'Es possibile clickar ubique al le sphera por movente le origine del lumine e le sphera con su umbra.'}
           <br />
-          The application allows the user to save the displayed sphere to a text
-          file
+          {lang
+            ? 'The application allows the user to save the displayed sphere to a text file.'
+            : 'Le application permitter le usator sparniar le sphere a un fila de texto.'}
         </p>
         <br />
-        <h2 className='text-xl'>TECHNOLOGIES USED</h2>
+        <h2 className='text-xl'>
+          {lang ? 'TECHNOLOGIES USED' : 'TECHNOLOGIA USAVA'}
+        </h2>
         <div className='flex flex-row'>
           <div className='flex flex-col justify-center items-center group mt-1 -mx-6 z-10'>
             <SiPython className='text-2xl text-orange-400 transition group-hover:text-purple-600' />
@@ -203,7 +211,7 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
           <div className='flex flex-col justify-center items-center group -mx-2'>
             <TbMathSymbols className='text-3xl text-orange-400 transition group-hover:text-purple-600' />
             <div className='bg-zinc-300 rounded text-black text-center text-sm flex items-center justify-center mt-1 transition duration-300 opacity-0 group-hover:opacity-100'>
-              Pure Maths
+              {lang ? 'Pure Maths' : 'Mathematica Pur'}
             </div>
           </div>
           <div className='flex flex-col justify-center items-center group -mx-2 z-10'>
@@ -218,7 +226,9 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
           href='https://github.com/Matdrox/sphere'
           target='_blank'
         >
-          <h2 className='text-md'>SOURCE CODE</h2>
+          <h2 className='text-md'>
+            {lang ? 'SOURCE CODE' : 'LE CODICE ORIGINAL'}
+          </h2>
         </a>
       </motion.div>
       <motion.div
