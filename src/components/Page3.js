@@ -46,7 +46,7 @@ const Page3 = ({ fontColor, lang }) => {
     <div className='-mt-52 grid place-items-center h-screen'>
       <form
         className='mt-52 w-11/12 flex-row align-middle
-        lg:grid lg:gap-8 lg:grid-cols-5 lg:grid-rows-4 lg:w-auto lg:h-auto'
+        lg:grid lg:gap-8 lg:grid-cols-5 lg:grid-rows-4 lg:w-auto lg:h-96'
         ref={form}
         onSubmit={sendEmail}
       >
@@ -87,7 +87,7 @@ const Page3 = ({ fontColor, lang }) => {
           <label htmlFor='message'>Message</label>
           <br />
           <textarea
-            className='p-3 shadow-md rounded-md w-full h-full text-black'
+            className='p-3 shadow-md rounded-md w-full h-[270px] text-black'
             name='message'
             required
           />

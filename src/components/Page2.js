@@ -176,7 +176,7 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false }}
       >
-        <h1 className='text-3xl'>MATHEMATICAL SPHERE</h1>
+        <h1 className='text-3xl'>{lang ? 'MATHEMATICAL SPHERE' : 'SPHERA MATHEMATICA'}</h1>
         <br />
         <p>
           Python application that displays a sphere along with its shadow using
