@@ -237,9 +237,9 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false }}
       >
-        <p>TEXT</p>
-        <p>TEXT</p>
-        <p>TEXT</p>
+        <p className='text-purple'>TEXT</p>
+        <p className='text-purple'>TEXT</p>
+        <p className='text-purple'>TEXT</p>
       </motion.div>
       <motion.div
         className='bg-white rounded-lg shadow-lg min-h-[350px] text-center'
