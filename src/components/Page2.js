@@ -288,13 +288,16 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
 						</div>
 					</div>
 				</div>
-				<a
-					className='underline'
-					href='https://play.google.com/store/apps/details?id=com.MatdroxGames.TapDash'
-					target='_blank'
-				>
-					<h2 className='text-md'>GOOGLE PLAY</h2>
-				</a>
+				<Button
+					text='GOOGLE PLAY'
+					width='200px'
+					onClick={() => {
+						window.open(
+							'https://play.google.com/store/apps/details?id=com.MatdroxGames.TapDash',
+							'_blank'
+						);
+					}}
+				/>
 			</motion.div>
 			<motion.div
 				className={`${boxColor} rounded-lg shadow-lg min-h-[350px] text-center cursor-grab overflow-hidden`}
