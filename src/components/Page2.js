@@ -16,7 +16,7 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
 	useEffect(() => {
 		setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
 	}, []);
-	// TEXT, IMAGE - IMAGE, TEXT - TEXT, IMAGE
+	// PHONE VERSION CANNOT SCROLL!
 	return (
 		<div
 			className={`${fontColor} mt-20 grid grid-cols-1 gap-2 lg:grid-cols-2 mx-5`}
