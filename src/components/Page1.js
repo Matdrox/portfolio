@@ -26,7 +26,6 @@ const Page1 = ({ fontColor, lang }) => {
 				{/* ADD LOAD ANIMATION */}
 				{/* SHOW THAT YOU HAVE TO SCROLL */}
 				<p className='text-orange-400 font-bold text-5xl'>
-					{/* <p className='text-zinc-800 font-bold text-5xl'> */}
 					{lang ? "Hi, I'm Matei Cananau" : 'Salve, io es Matei Cananau'}
 				</p>
 				<p className={`${fontColor} text-xl transition duration-200 md:w-3/4`}>
