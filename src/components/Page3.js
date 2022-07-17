@@ -104,7 +104,6 @@ const Page3 = ({ fontColor, lang }) => {
           <br />
         </div>
         <>{result ? <Result lang={lang} /> : null}</>
-        {/* For Testing: */}
         {/* <Result /> */}
       </form>
     </div>
