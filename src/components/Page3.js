@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import Button from './buttons/Button';
 
 const Result = ({ lang }) => {
+  // CHANGE COLOR
   return (
     <div className='text-white p-2 bg-orange-400 shadow-lg shadow-orange-400/30 rounded-md w-full h-max lg:col-span-4 row-start-5'>
       {lang
