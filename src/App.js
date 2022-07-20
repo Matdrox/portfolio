@@ -7,7 +7,7 @@ import Switch from './components/buttons/Switch';
 import LangButton from './components/buttons/LangButton';
 
 function App() {
-	// Not working?
+	// Not working? FIX
 	useEffect(() => {
 		ReactGA.initialize('G-EMFTQMKQ7J');
 		ReactGA.pageview(window.location.pathname + window.location.search);
