@@ -16,7 +16,6 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
 	useEffect(() => {
 		setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
 	}, []);
-	// PHONE VERSION CANNOT SCROLL!
 	return (
 		<div
 			className={`${fontColor} mt-20 grid grid-cols-1 gap-2 lg:grid-cols-2 mx-5`}
@@ -25,7 +24,6 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
 				className={`${fontColor} text-center relative w-full text-5xl font-extrabold lg:col-span-2 mb-10`}
 			>
 				<h1 className='relative'>{lang ? 'My Projects' : 'Mi Projectos'}</h1>
-				{/* <div className='flex justify-center'> */}
 				<div className='grid grid-rows-1 w-72 ml-auto mr-auto'>
 					<div className='bg-purple-600 shadow-md shadow-purple-600/30 h-2 w-full rounded-md row-start-1 ml-1'></div>
 					<div className='bg-orange-400 shadow-md shadow-orange-400/30 h-2 w-full rounded-md row-start-1 mr-1'></div>
