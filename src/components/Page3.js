@@ -88,7 +88,7 @@ const Page3 = ({ fontColor, boxColor, lang }) => {
           <label htmlFor='message'>Message</label>
           <br />
           <textarea
-            className={`${boxColor} p-3 shadow-md rounded-md w-full h-[270px]`}
+            className={`${boxColor} p-3 shadow-md rounded-md w-full h-[270px] resize-none`}
             name='message'
             required
           />

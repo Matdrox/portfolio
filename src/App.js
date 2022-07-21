@@ -9,7 +9,7 @@ import LangButton from './components/buttons/LangButton';
 function App() {
 	// Not working? FIX
 	useEffect(() => {
-		ReactGA.initialize('G-EMFTQMKQ7J');
+		ReactGA.initialize('UA-235238761-1');
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 
