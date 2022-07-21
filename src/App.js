@@ -42,7 +42,7 @@ function App() {
 			<LangButton text={lang ? 'EN' : 'IA'} onClick={() => setLang(!lang)} />
 			<Page1 fontColor={fontColor} lang={lang} />
 			<Page2 fontColor={fontColor} lang={lang} boxColor={boxColor} />
-			<Page3 fontColor={fontColor} lang={lang} />
+			<Page3 fontColor={fontColor} lang={lang} boxColor={boxColor} />
 		</div>
 	);
 }

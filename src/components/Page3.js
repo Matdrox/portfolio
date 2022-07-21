@@ -13,7 +13,7 @@ const Result = ({ lang }) => {
   );
 };
 
-const Page3 = ({ fontColor, lang }) => {
+const Page3 = ({ fontColor, boxColor, lang }) => {
   const form = useRef();
   const [result, setResult] = useState(false);
 
@@ -66,7 +66,7 @@ const Page3 = ({ fontColor, lang }) => {
           <span>{lang ? 'Your name' : 'Tu nomine'}</span>
           <br />
           <input
-            className='p-3 shadow-md rounded-md w-full h-full text-black'
+            className={`${boxColor} p-3 shadow-md rounded-md w-full h-full`}
             type='text'
             name='name'
             required
@@ -77,7 +77,7 @@ const Page3 = ({ fontColor, lang }) => {
           <span>{lang ? 'Your email' : 'Tu email'}</span>
           <br />
           <input
-            className='p-3 shadow-md rounded-md w-full h-full text-black'
+            className={`${boxColor} p-3 shadow-md rounded-md w-full h-full`}
             type='text'
             name='email'
             required
@@ -88,7 +88,7 @@ const Page3 = ({ fontColor, lang }) => {
           <label htmlFor='message'>Message</label>
           <br />
           <textarea
-            className='p-3 shadow-md rounded-md w-full h-[270px] text-black'
+            className={`${boxColor} p-3 shadow-md rounded-md w-full h-[270px]`}
             name='message'
             required
           />
