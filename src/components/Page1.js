@@ -1,18 +1,8 @@
 import Button from './buttons/Button';
 import imgMateiCananau from '../img/MateiCananau.jpg';
 import { motion } from 'framer-motion';
-import { useRef } from 'react';
 
 const Page1 = ({ fontColor, lang }) => {
-	const projects = useRef(null);
-	const contact = useRef(null);
-
-	const scrollToSection = (elementRef) => {
-		window.scrollTo({
-			top: elementRef.current.offsetTop,
-			behavior: 'smooth',
-		});
-	};
 
 	return (
 		<div
@@ -37,12 +27,7 @@ const Page1 = ({ fontColor, lang }) => {
 				</p>
 				<div className='flex space-x-4 justify-center md:justify-start'>
 					<Button
-						text={lang ? 'My Projects' : 'Mi Projectos'}
-						onClick={() => scrollToSection(projects)}
-					/>
-					<Button
-						text={lang ? 'Contact Me' : 'Contacto Me'}
-						onClick={() => scrollToSection(contact)}
+						text={lang ? 'Download CV' : 'Discargar CV'}
 					/>
 				</div>
 			</div>
