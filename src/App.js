@@ -16,7 +16,7 @@ function App() {
 	const darkTheme = 'bg-zinc-800';
 
 	const lightBox = 'bg-white';
-	const darkBox = 'bg-zinc-900';
+	const darkBox = 'bg-zinc-700';
 
 	const lightFont = 'text-zinc-800';
 	const darkFont = 'text-zinc-200';
