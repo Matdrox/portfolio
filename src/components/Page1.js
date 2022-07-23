@@ -3,7 +3,6 @@ import imgMateiCananau from '../img/MateiCananau.jpg';
 import { motion } from 'framer-motion';
 
 const Page1 = ({ fontColor, lang }) => {
-
 	return (
 		<div
 			className='flex flex-col-reverse text-center justify-center items-center h-screen min-w-screen content-center space-y-20 space-y-reverse
@@ -18,7 +17,7 @@ const Page1 = ({ fontColor, lang }) => {
 				<p className='text-orange-400 font-bold text-5xl'>
 					{lang ? "Hi, I'm Matei Cananau" : 'Salve, io es Matei Cananau'}
 				</p>
-				<p className={`${fontColor} text-xl transition duration-200 md:w-3/4`}>
+				<p className={`${fontColor} text-xl transition duration-200 md:w-5/6`}>
 					{lang
 						? 'I am an engineering student at KTH Royal Institute of Technology.'
 						: 'Io es un studente de ingenieria a KTH Royal Institute of Technology.'}
@@ -26,9 +25,7 @@ const Page1 = ({ fontColor, lang }) => {
 					{lang ? 'Welcome to my portfolio.' : 'Benvenite a mi portafolio'}
 				</p>
 				<div className='flex space-x-4 justify-center md:justify-start'>
-					<Button
-						text={lang ? 'Download CV' : 'Discargar CV'}
-					/>
+					<Button text={lang ? 'Download CV' : 'Discargar CV'} />
 				</div>
 			</div>
 			<motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 1 }}>
