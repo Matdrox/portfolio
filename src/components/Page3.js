@@ -55,7 +55,6 @@ const Page3 = ({ fontColor, boxColor, lang }) => {
 					className={`${fontColor} text-center relative w-full text-5xl font-extrabold lg:col-span-4 mb-10`}
 				>
 					<h1 className='relative'>{lang ? 'Contact Me' : 'Contacto Me'}</h1>
-					{/* <div className='flex justify-center'> */}
 					<div className='grid grid-rows-1 w-2/3 ml-auto mr-auto'>
 						<div className='bg-purple-600 shadow-md shadow-purple-600/30 h-2 w-full rounded-md row-start-1 ml-2'></div>
 						<div className='bg-orange-400 shadow-md shadow-orange-400/30 h-2 w-full rounded-md row-start-1 mr-2'></div>
