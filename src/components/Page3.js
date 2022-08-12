@@ -104,7 +104,7 @@ const Page3 = ({ fontColor, boxColor, lang }) => {
 					<br />
 				</div>
 				<>{result ? <Result lang={lang} /> : null}</>
-				{/* <Result /> */}
+				{/* DO NOT REMOVE <Result /> */} 
 			</form>
 		</div>
 	);
