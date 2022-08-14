@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 const LangButton = ({ onClick, text }) => {
   return (
     <button
