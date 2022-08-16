@@ -53,7 +53,7 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
 					</a>
 					{lang ? '.' : ' modificate.'} <br />
 					{lang
-						? 'The user can use the search function to look up a specific god.'
+						? 'The user can use the search function to look up a specific deity.'
 						: 'Le usator pote usar le function del cerca a perquire un deo specific.'}
 					<br />
 					{lang
@@ -142,7 +142,7 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
 				</motion.div>
 			</motion.div>
 			<motion.div
-				className={`${boxColor} rounded-lg shadow-lg min-h-[350px] text-center cursor-grab overflow-hidden`}
+				className={`${boxColor} rounded-lg shadow-lg min-h-[350px] text-center cursor-grab overflow-hidden lg:mt-0 mt-32`}
 				ref={carousel}
 				transition={{ delay: 0.4 }}
 				initial={{ opacity: 0, y: '20%' }}
@@ -233,7 +233,7 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
 				</a>
 			</motion.div>
 			<motion.div
-				className='min-h-[350px] flex flex-col justify-center items-center text-center'
+				className='min-h-[350px] flex flex-col justify-center items-center text-center lg:mt-0 mt-32'
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				viewport={{ once: false }}
