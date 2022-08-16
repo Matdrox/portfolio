@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bbf3f49e.css",
-    "main.js": "/static/js/main.a7194e11.js",
+    "main.css": "/static/css/main.0f8e91fc.css",
+    "main.js": "/static/js/main.cecb6a67.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Matei_Cananau_CV.pdf": "/static/media/Matei_Cananau_CV.220a36fea27ee617de2f.pdf",
     "static/media/MateiCananau.jpg": "/static/media/MateiCananau.de385819392913f89266.jpg",
@@ -18,12 +18,12 @@
     "static/media/imgSphere1.png": "/static/media/imgSphere1.f52e5d6db51df14db475.png",
     "static/media/imgSphere3.png": "/static/media/imgSphere3.8ac29d8ca0286b929ee8.png",
     "index.html": "/index.html",
-    "main.bbf3f49e.css.map": "/static/css/main.bbf3f49e.css.map",
-    "main.a7194e11.js.map": "/static/js/main.a7194e11.js.map",
+    "main.0f8e91fc.css.map": "/static/css/main.0f8e91fc.css.map",
+    "main.cecb6a67.js.map": "/static/js/main.cecb6a67.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbf3f49e.css",
-    "static/js/main.a7194e11.js"
+    "static/css/main.0f8e91fc.css",
+    "static/js/main.cecb6a67.js"
   ]
 }
