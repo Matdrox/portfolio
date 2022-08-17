@@ -44,7 +44,7 @@ const Page3 = ({ fontColor, boxColor, lang }) => {
 	}, 30000);
 
 	return (
-		<div className='-mt-32 pb-32 lg:-mt-52 grid place-items-center h-screen'>
+		<div className='-mt-32 pb-32 md:-mt-52 grid place-items-center h-screen'>
 			<form
 				className='mt-52 w-11/12 flex-row align-middle
         lg:grid lg:gap-8 lg:grid-cols-5 lg:grid-rows-4 lg:w-auto lg:h-96'
