@@ -11,7 +11,6 @@ import { TbApi, TbMathSymbols } from 'react-icons/tb';
 import { BsDisplay } from 'react-icons/bs';
 
 const Page2 = ({ fontColor, lang, boxColor }) => {
-	// MAKE THE HEIGHT BIGGER
 	const [width, setWidth] = useState(0);
 	const carousel = useRef();
 	useEffect(() => {
