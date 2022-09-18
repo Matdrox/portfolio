@@ -40,9 +40,9 @@ function App() {
         onClick={() => setEnabled(!enabled)}
       />
       <LangButton text={lang ? 'EN' : 'IA'} onClick={() => setLang(!lang)} />
-      <div className='text-zinc-400 top-[40px] right-20 m-10 absolute font-serif font-homemade'>
-        <img src={imgArrow} />
-        <p className='absolute mr-8 mt-2'>{lang ? 'english' : 'interlingua'}</p>
+      <div className='text-zinc-400 top-[40px] right-14 m-10 absolute font-serif font-homemade md:right-20'>
+        <img src={imgArrow} className='-rotate-[60deg]  md:rotate-0'/>
+        <p className='absolute ml-24 -mt-3 md:-ml-2 md:mt-2'>{lang ? 'english' : 'interlingua'}</p>
       </div>
       <Page1 fontColor={fontColor} lang={lang} />
       <Page2 fontColor={fontColor} lang={lang} boxColor={boxColor} />
