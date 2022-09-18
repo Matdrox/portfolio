@@ -13,7 +13,6 @@ const Result = ({ lang }) => {
 };
 
 const Page3 = ({ fontColor, boxColor, lang }) => {
-	// HIGHER MARIGN TOP
 	const form = useRef();
 	const [result, setResult] = useState(false);
 
@@ -93,7 +92,7 @@ const Page3 = ({ fontColor, boxColor, lang }) => {
 					/>
 				</div>
 
-				<div className='lg:col-span-2 h-16'>
+				<div className='lg:col-span-2 h-14'>
 					<br />
 					<Button
 						type='submit'

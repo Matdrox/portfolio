@@ -18,7 +18,7 @@ const Page2 = ({ fontColor, lang, boxColor }) => {
 	}, []);
 	return (
 		<div
-			className={`${fontColor} mt-20 grid grid-cols-1 gap-2 lg:grid-cols-2 mx-5`}
+			className={`${fontColor} mt-32 grid grid-cols-1 gap-2 lg:grid-cols-2 mx-5`}
 		>
 			<div
 				className={`${fontColor} text-center relative w-full text-5xl font-extrabold lg:col-span-2 mb-10`}

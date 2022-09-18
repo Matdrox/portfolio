@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div
-      className={`transition ease-in-out duration-500 ${
+      className={`transition ease-in-out duration-500 pb-24 ${
         enabled ? darkTheme : lightTheme
       }`}
     >

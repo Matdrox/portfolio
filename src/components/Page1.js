@@ -33,7 +33,7 @@ const Page1 = ({ fontColor, lang }) => {
 				<img
 					src={imgMateiCananau}
 					className='w-96 pointer-events-none rounded-xl shadow-md p-2 bg-gradient-to-r from-orange-400 to-purple-600
-          min-w-[300px] mt-40'
+          min-w-[300px] mt-56'
 				/>
 			</motion.div>
 		</div>
