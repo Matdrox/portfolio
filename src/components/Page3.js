@@ -64,7 +64,7 @@ const Page3 = ({ fontColor, boxColor, lang }) => {
 					<span>{lang ? 'Your name' : 'Tu nomine'}</span>
 					<br />
 					<input
-						className={`${boxColor} p-3 shadow-md rounded-md w-full h-full`}
+						className={`${boxColor} p-3 shadow-md rounded-md w-full`}
 						type='text'
 						name='name'
 						required
@@ -75,7 +75,7 @@ const Page3 = ({ fontColor, boxColor, lang }) => {
 					<span>{lang ? 'Your email' : 'Tu email'}</span>
 					<br />
 					<input
-						className={`${boxColor} p-3 shadow-md rounded-md w-full h-full`}
+						className={`${boxColor} p-3 shadow-md rounded-md w-full`}
 						type='text'
 						name='email'
 						required

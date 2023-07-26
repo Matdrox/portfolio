@@ -1,6 +1,6 @@
 import Button from './buttons/Button';
 import imgMateiCananau from '../img/MateiCananau.jpg';
-import CV from '../img/Matei_Cananau_CV.pdf';
+import CV from '../img/Matei_Cananau_Resume.pdf';
 import { motion } from 'framer-motion';
 
 const Page1 = ({ fontColor, lang }) => {
@@ -33,7 +33,7 @@ const Page1 = ({ fontColor, lang }) => {
 				<img
 					src={imgMateiCananau}
 					className='w-96 pointer-events-none rounded-xl shadow-md p-2 bg-gradient-to-r from-orange-400 to-purple-600
-          min-w-[300px] mt-56'
+          min-w-[300px] mt-64 md:mt-12'
 				/>
 			</motion.div>
 		</div>
